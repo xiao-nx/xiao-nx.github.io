@@ -29,9 +29,7 @@ I received my B.Sc. degree in Mechatronic Engineering in June 2015 from Mechanic
 I am interested in the following topics:
 
 * Parameter estimation in stochastic mathematical mode
-
 * Medical Image Processing, especially in diagnosis
-
 * Biomedical Natural Language Processing
 * Others
 
