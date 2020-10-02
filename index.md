@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/xiao-nx/xiao-nx.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+<table border="0">   
+    <tr>
+        <td width="25%">       
+           <img src="./photo.jpg" width="100%"> 	       
+        </td>  
+        <td width="75%">       
+            <h1>Xiao Ning</h1>       
+            <p><b>Ph.D.candidate</b></p>  
+            <p><b>School of Biological Science & Medical Engineering</b></p> 
+            <p><b>SOUTHEST UNIVERSITY, Nanjing 210096, China </b></p>       
+            <p><b>Email: xiao.ning@outlook.com</b></p>   
+        </td> 
+    </tr> 
+</table>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Biography
 
-### Markdown
+Currently I am a second year Ph.D. candidate of School of Biological Science & Medical Engineering in Southeast  University.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I received my B.Sc. degree in Mechatronic Engineering in June 2015 from Mechanical Engineering and Automation College of Xihua University. Then I got my  M.Sc. degree in Forestry Information Engineering in June 2019 from Information and Computer Engineering College of Northeast Forestry University.
 
-```markdown
-Syntax highlighted code block
+# Recent Update
 
-# Header 1
-## Header 2
-### Header 3
+* Anonymous
 
-- Bulleted
-- List
+# Research Interests
 
-1. Numbered
-2. List
+I am interested in the following topics:
 
-**Bold** and _Italic_ and `Code` text
+* Parameter estimation in stochastic mathematical mode
 
-[Link](url) and ![Image](src)
-```
+* Medical Image Processing, especially in diagnosis
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+* Biomedical Natural Language Processing
+* Others
 
-### Jekyll Themes
+# Publications
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xiao-nx/xiao-nx.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Anonymous
 
-### Support or Contact
+# Academic Service
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Anonymous
+
+# Contests & Awards
+
+* Anonymous
+
+# Correspondence
+
+* Anonymous
+
