@@ -40,6 +40,25 @@ I am interested in the following topics:
 - Ning X, Zhao P. [J]. Image segmentation of tree ring based on the random forest algorithm[J] Journal of Forestry Engineering,2018,3(04):125-130. (In Chinese)
 - Zhao P, Li Y, Ning X. Simultaneous Wood Defect and Species Detection with 3D Laser Scanning Scheme[J]. International Journal of Optics, 2016, 2016:1-6.
 
+# Project Experience
+
+- Comparison of clinical placebo effect based on literature analysis
+- Evaluation and accurate diagnoses of Chronic lymphoblastic leukemia using CNN model
+- Automatic extraction of building target in high resolution visible image
+- Automatic detection and recognition of objects in optical remote sensing image
+
+# Conferences
+
+- 9th Jiangsu bioinformatics academic conference&biomedical big data Forum in Nanjing,China
+- China health statistics academic annual conference 2019 in Guangzhou, Guangdong, China
+- 6th Jinling International Statistical Genetics and Genomics Forum 2019 in Nanjing, China
+
+# Skills
+- Computer Programming (C/C++, PYTHON, MATLAB)
+- Machine/Deep Learning (Algorithm theory, CNN, RNN, Lstm, PyTorch, TensorFlow)
+- Computer Vision (Image processing, image classification, segmentation and detection)
+- Nature Language Processing (Text Classification, NER and RE)
+
 # Academic Service
 
 * Anonymous
