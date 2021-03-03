@@ -65,7 +65,7 @@ I am interested in the following topics:
 
 # Contests & Awards
 
-* Anonymous
+- 2020 Joint Ph.D. students from China Scholarship Council (CSC-UM Scholarship Program).
 
 # Correspondence
 
