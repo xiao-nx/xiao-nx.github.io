@@ -35,7 +35,10 @@ I am interested in the following topics:
 
 # Publications
 
-- Anonymous
+- Global COVID-19 pandemic waves: limited lessons learned worldwide so far (under review)
+- Ning X, Zhao P. Segmentation algorithm of annual ring image based on U-Net convolution network [J]. Journal of ecology,2019,38(05):1580-1588. (In Chinese)
+- Ning X, Zhao P. [J]. Image segmentation of tree ring based on the random forest algorithm[J] Journal of Forestry Engineering,2018,3(04):125-130. (In Chinese)
+- Zhao P, Li Y, Ning X. Simultaneous Wood Defect and Species Detection with 3D Laser Scanning Scheme[J]. International Journal of Optics, 2016, 2016:1-6.
 
 # Academic Service
 
