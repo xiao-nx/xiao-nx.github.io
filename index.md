@@ -22,7 +22,9 @@ I received my B.Sc. degree in Mechatronic Engineering in June 2015 from Mechanic
 
 # Recent Update
 
-* Anonymous
+* Biomedical Knowledge graph, especially Relation Extraction
+* The transmission prediction of COVID-19 infectious diseases 
+* Estimation of epidemiological parameters from differential equations
 
 # Research Interests
 
