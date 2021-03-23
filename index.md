@@ -48,6 +48,7 @@ I am interested in the following topics:
 - Evaluation and accurate diagnoses of Chronic lymphoblastic leukemia using CNN model
 - Automatic extraction of building target in high resolution visible image
 - Automatic detection and recognition of objects in optical remote sensing image
+- Semantic segmentation and information extraction of tree ring images
 
 # Conferences
 
@@ -60,6 +61,13 @@ I am interested in the following topics:
 - Machine/Deep Learning (Algorithm theory, CNN, RNN, Lstm, PyTorch, TensorFlow)
 - Computer Vision (Image processing, image classification, segmentation and detection)
 - Nature Language Processing (Text Classification, NER and RE)
+
+# Courses followed
+- Neural Information Acquisition Methods and Techniques; New Advances in Natural Drug Research and New Drug Development; Nano-bio and Pharmaceutical Technology Fundamentals
+Bio-Coupling Technology
+- Senior Database Theory and Applications; Forestry Information Engineering Technology; Digital Image Processing and Analysis; Data Storage and Data Mining; Pattern Recognition Theory and Applications; High Performance Computing and Cloud Computing; Algorithm Design and Analysis; Modern Intelligent Information processing Practice Methods
+- Engineering Drawing; Electrical Fundamentals; Computer Application Fundamentals; Mechanical Design Fundamentals; Analogue Electronics; Digital Electronics; Power Electronics
+Control Engineering Fundamentals; Microcontroller principles and applications; Mechanical and Electrical Automatic Control; Mechanical engineering test technology; Robotics;; Digital image processing; C++ Programming applications in measurement and control; Mechanical and electrical integration fundamentals
 
 # Academic Service
 
