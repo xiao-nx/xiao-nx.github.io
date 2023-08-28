@@ -1,6 +1,6 @@
 ---
 title: "Data Minging"
-collection: Teaching Assistant
+collection: teaching
 type: "Master Course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Maastricht University"
