@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 ## Lecture
-======
+
 * Data Minging, 2021 Fall, Master Course, Teaching Assistant, Maastricht University.
 
 <!-- {% include base_path %}
