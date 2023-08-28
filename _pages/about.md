@@ -24,10 +24,14 @@ Research Interests
 * Parameter estimation in stochastic mathematical mode
 * Information extraction and knowledge graph
 
-Ongoing projcet
+Ongoing Projcet
 ------
 * Bayesian physics-informed neural networks for infectious disease transmission modelling.
 * Biomeidcal information extraction from unstructed text.
+
+Selected Publications
+------
+* waiting...
 
 For more info
 ------
