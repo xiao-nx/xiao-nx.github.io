@@ -36,12 +36,10 @@ Visiting Experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Computer Programming (Python, C/C++, MATLAB)
+* Nature Language Processing (Text Classification, NER and RE)
+* Machine/Deep Learning (scikit-learn, PyTorch, TensorFlow, CNN, RNN, Lstm, Transformr…)
+* Computer Vision (Image processing, image classification, segmentation and detection)
 
 Publications
 ======
