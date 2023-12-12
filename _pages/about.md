@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About me..."
+title: "Xiao NING (宁霄)"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
