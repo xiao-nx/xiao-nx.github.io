@@ -1,8 +1,10 @@
 ---
+layout: archive
+title: "talks"
 permalink: /talks/
-title: "Conference Presentation"
-modified: 2023-12-12
+author_profile: true
 ---
+
 
 <!-- {% include base_path %}
 {% include toc %} -->
