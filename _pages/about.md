@@ -20,7 +20,7 @@ My research interests lies in :
 * Parameter estimation in stochastic mathematical mode
 * Information extraction and knowledge graph
 
-Recent News
+News
 ======
 Waiting...
 
@@ -44,7 +44,7 @@ Feb 2021 -- Feb. 2022: Joint doctoral student at **Maastricht University, Nether
 
 Selected Publications
 ------
-* waiting...
+* Ning X, et al. Epi-DNNs: Epidemiological priors informed deep neural networks for modeling COVID-19 dynamics [J]. Computers in Biology and Medicine, 2023, 158: 106693. [[Paper]](https://www.sciencedirect.com/science/article/pii/S0010482523001580)[[Code]]()
 
 
 <!-- Ongoing Projcet
