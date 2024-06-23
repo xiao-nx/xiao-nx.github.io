@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:red;">
+<!-- <span style="color:red;">
 Lecturer, China Pharmaceutical University
-</span>
+</span> -->
 
 I am a lecturer at the School of Science, China Pharmaceutical University.
 Prior to that, I received Ph.D. degree in Biomedical Engineering from Southeast University in 2023, supervised by Prof. Feng Chen and Prof. Xiao Sun.
