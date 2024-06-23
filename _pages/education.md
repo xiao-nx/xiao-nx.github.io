@@ -7,19 +7,16 @@ redirect_from:
   - /markdown.html
 ---
 
-<span style="text-shadow: 1px 1px 2px lightgrey;">
 **Ph.D.** in Biomedical Engineering  
   Sep. 2019 - Dec. 2023 : **Southeast University, Nanjing, China.** 
-</span>
-
-
-**Ph.D.** in Biomedical Engineering  
-  Sep. 2019 - Dec. 2023 : **Southeast University, Nanjing, China.** 
-
 	visiting experiences:
-    	Nov. 2023 -- Dec. 2023: Visiting Researcher at **Bern University, Switzerland**    
-    	May 2023 -- Aug. 2023: Visiting Researcher at **Karlsruhe Institute of Technology, Germany**   
-    	Feb 2021 -- Feb. 2022: Joint doctoral student at **Maastricht University, Netherlands** 
+    	Nov. 2023 - Dec. 2023: Visiting Researcher at **Bern University, Switzerland**    
+    	May 2023 - Aug. 2023: Visiting Researcher at **Karlsruhe Institute of Technology, Germany**   
+    	Feb 2021 - Feb. 2022: Joint doctoral student at **Maastricht University, Netherlands** 
+
+<div style="background-color: lightgrey; padding: 5px; box-shadow: 0px 0px 10px lightgrey;">
+This text has a light shadow background.
+</div>
 
 **M.S.** in Forestry Information Engineering  
   Sep. 2016 - Dec. 2019 : Northeast Forestry University, Harbin, China.
