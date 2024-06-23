@@ -28,9 +28,9 @@ redirect_from:
 </span> in Biomedical Engineering <br>
     Sep. 2019 - Dec. 2023 : Southeast University, Nanjing, China. <br>
         **visiting experiences** <br>
-            Nov. 2023 - Dec. 2023:
-            May 2023 - Aug. 2023:
-
+            Nov. 2023 - Dec. 2023: Visiting Researcher at Bern University, Switzerland <br>
+            May 2023 - Aug. 2023: Visiting Researcher at Karlsruhe Institute of Technology, Germany <br> 
+			Feb 2021 - Feb. 2022: Joint doctoral student at Maastricht University, Netherlands <br> 
 
 <span style="display: inline-block; background-color: #b2ebf2; padding: 3px; box-shadow: 0px 0px 10px grey;">
     **M.S. degree** 
