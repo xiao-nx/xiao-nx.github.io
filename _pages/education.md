@@ -17,9 +17,9 @@ redirect_from:
 <span style="display: inline-block; background-color: #b2ebf2; padding: 3px; box-shadow: 0px 0px 10px grey;">
     **Ph.D. degree** 
 </span> in Biomedical Engineering <br>
-	Sep. 2019 - Dec. 2023 : Southeast University, Nanjing, China.
-
+	Sep. 2019 - Dec. 2023 : Southeast University, Nanjing, China. 
 		Nov. 2023 - Dec. 2023: Visiting Researcher at **Bern University, Switzerland** 
+		May 2023 - Aug. 2023: Visiting Researcher at **Karlsruhe Institute of Technology, Germany** 
 
 
 <span style="display: inline-block; background-color: #b2ebf2; padding: 3px; box-shadow: 0px 0px 10px grey;">
