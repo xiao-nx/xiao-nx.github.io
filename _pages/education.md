@@ -15,8 +15,13 @@ redirect_from:
     	Feb 2021 - Feb. 2022: Joint doctoral student at **Maastricht University, Netherlands** 
 
 <span style="display: inline-block; background-color: #e0f2f1; padding: 5px; box-shadow: 0px 0px 10px lightgrey;">
-    This text has a light shadow background.
+    **Ph.D. degree**
 </span>
+
+<span style="display: inline-block; background-color: #b2ebf2; padding: 5px; box-shadow: 0px 0px 10px grey;">
+    This text has a more prominent shadow background.
+</span>
+
 
 **M.S.** in Forestry Information Engineering  
   Sep. 2016 - Dec. 2019 : Northeast Forestry University, Harbin, China.
