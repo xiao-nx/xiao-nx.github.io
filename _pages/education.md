@@ -14,13 +14,16 @@ redirect_from:
     	May 2023 - Aug. 2023: Visiting Researcher at **Karlsruhe Institute of Technology, Germany**   
     	Feb 2021 - Feb. 2022: Joint doctoral student at **Maastricht University, Netherlands** 
 
-<span style="display: inline-block; background-color: #e0f2f1; padding: 5px; box-shadow: 0px 0px 10px lightgrey;">
-    **Ph.D. degree**
-</span>
+<span style="display: inline-block; background-color: #b2ebf2; padding: 5px; box-shadow: 0px 0px 10px grey;">
+    **Ph.D. degree** 
+</span> in Biomedical Engineering 
+Sep. 2019 - Dec. 2023 : Southeast University, Nanjing, China.
+
 
 <span style="display: inline-block; background-color: #b2ebf2; padding: 5px; box-shadow: 0px 0px 10px grey;">
-    This text has a more prominent shadow background.
-</span>
+    **M.S. degree** 
+</span> in Biomedical Engineering 
+Sep. 2019 - Dec. 2023 : Forestry Information Engineering in Northeast Forestry University, Harbin, China.
 
 
 **M.S.** in Forestry Information Engineering  
