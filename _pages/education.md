@@ -19,6 +19,10 @@ redirect_from:
 </span> in Biomedical Engineering 
 Sep. 2019 - Dec. 2023 : Southeast University, Nanjing, China.
 
+<span style="display: inline-block; background-color: #00acc1; padding: 5px; box-shadow: 0px 0px 10px #444444;">
+	**Ph.D. degree** 
+</span>
+
 
 <span style="display: inline-block; background-color: #b2ebf2; padding: 5px; box-shadow: 0px 0px 10px grey;">
     **M.S. degree** 
