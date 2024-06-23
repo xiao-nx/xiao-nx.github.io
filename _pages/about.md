@@ -8,16 +8,18 @@ redirect_from:
   - /about.html
 ---
 
-<span style="color:red;">Currently, I am looking for a Postdoc position. </span>
+<span style="color:red;">
+Lecturer, China Pharmaceutical University
+</span>
 
-I have abtained Ph.D. degree in Biomedical Engineering from Southeast University, supervised by Professor Feng Chen.
-My research goal is to understand the dynamic of complex systems more effectively by combining known information (prior knowledge, mathematical or physical equations, etc.) with data-driven methods.
-<!-- Prior to that, I received my Ph.D. Degree from University of Munich in 2022, advised by xxx. -->
-<!-- I am interested in Physics-guide deep learning, dynamic model, and Bayesian inference. -->
+I am a lecturer at the School of Science, China Pharmaceutical University.
+Prior to that, I received Ph.D. degree in Biomedical Engineering from Southeast University in 2023, supervised by Prof. Feng Chen and Prof. Xiao Sun.
+
+My research goal is to understand the dynamic of complex biological systems more effectively by combining known information (prior knowledge, mathematical or physical equations, etc.) with data-driven methods.
 My research interests lies in :
+* Pharmacokinetics
 * Physics-data-driven model
 * Infectious disease transmission modelling
-* Parameter estimation in stochastic mathematical mode
 * Information extraction and knowledge graph
 
 News
@@ -27,8 +29,8 @@ Waiting...
 Education
 ======
 **Ph.D.** in Biomedical Engineering  
-  Sep. 2019 - Dec. 2023 : **Southeast University, Nanjing, China.**
-  ====== 
+  Sep. 2019 - Dec. 2023 : **Southeast University, Nanjing, China.** 
+
     visiting experiences:
       Nov. 2023 -- Dec. 2023: Visiting Researcher at **Bern University, Switzerland**    
       May 2023 -- Aug. 2023: Visiting Researcher at **Karlsruhe Institute of Technology, Germany**   
