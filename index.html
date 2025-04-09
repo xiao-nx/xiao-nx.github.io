@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Xiao Ning's Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        :root {
+            --btn-normal: #cd86f7;
+            --btn-hover: #d9a0fa;
+            --btn-active: #c76afd;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            height: 80px;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .tab-button {
+            position: relative;
+            cursor: pointer;
+            padding: 10px 0;
+            background: none;
+            border: none;
+            font-size: 20px;
+        }
+
+        .tab-button::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: #333;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover::before {
+            width: 100%;
+            left: 0;
+        }
+
+        .lang-switch {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: var(--btn-normal);
+            transition: background 0.3s;
+            user-select: none;
+        }
+
+        .lang-switch:hover {
+            background-color: var(--btn-hover);
+        }
+
+        .lang-switch:active {
+            background-color: var(--btn-active);
+        }
+
+        .body {
+            flex: 1;
+            display: flex;
+            min-height: calc(100vh - 400px);
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .profile-icon {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: #ddd;
+        }
+
+        .links-list img {
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+
+        .content-area {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .content {
+            display: none;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .lang {
+            display: none;
+        }
+
+        .lang.active {
+            display: block;
+        }
+
+        footer {
+            height: 80px;
+            background: #e4e4e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #ccc;
+        }
+        
+        .pad {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .pad-left {
+            padding-left: 100px;
+        }
+
+        .links-list a {
+            text-decoration: none;
+            padding-left: 5px;
+        }
+
+        .links-list a:hover {
+             text-decoration: underline;
+        }
+
+        .links-list a:link {
+            color: black;
+        }
+
+        .links-list a:visited {
+            color: black;
+        }
+
+        .links-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .links-list li {
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        .links-list li i {
+            width: 1.25em; /* 统一宽度 */
+            text-align: center; /* 图标水平居中 */
+        }
+
+        .content-area li {
+            line-height: 1.5em;
+            padding: 10px;
+            font-size: 1.2em;
+            color: rgb(71, 71, 71);
+        }
+
+    </style>
+</head>
+<body>
+    <header class="pad-left">
+        <ul class="tabs">
+            <li><button class="tab-button" data-tab="home">Home</button></li>
+            <li><button class="tab-button" data-tab="publications">Publications</button></li>
+            <li><button class="tab-button" data-tab="education">Education</button></li>
+            <li><button class="tab-button" data-tab="projects">Projects</button></li>
+            <li><button class="tab-button" data-tab="talks">Talks</button></li>
+            <li><button class="tab-button" data-tab="teaching">Teaching</button></li>
+            <li><button class="tab-button" data-tab="cv">CV</button></li>
+            <li><button class="tab-button" data-tab="others">Others</button></li>
+        </ul>
+        <div class="lang-switch">中文/English</div>
+    </header>
+
+    <div class="body pad">
+        <div class="sidebar">
+            <img src="profile.png" alt="Profile" class="profile-icon">
+            <h2>Xiao Ning</h2>
+            <p>Dynamics models, Machine learning...</p>
+            <ul class="links-list">
+                <li><i class="fas fa-location-dot fa-fw"></i><a href="#">NanJing</a></li>
+                <li><i class="fas fa-envelope fa-fw"></i><a href="#">Email</a></li>
+                <li><i class="fab fa-researchgate"></i><a href="#">ResearchGate</a></li>
+                <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li>
+                <li><i class="fab fa-github"></i><a href="#">Github</a></li>
+                <li><i class="fab fa-google"></i><a href="#">Google Scholar</a></li>
+                <li><i class="fab fa-orcid"></i><a href="#">ORCID</a></li>
+            </ul>
+        </div>
+
+        <div class="content-area">
+            <!-- 每个tab对应两个语言版本的内容 -->
+            <div class="content home active">
+                <div class="lang en active">Home Content (English)</div>
+                <div class="lang cn">首页内容 (中文)</div>
+            </div>
+            <div class="content publications">
+                <div class="lang en active">
+                    <!--示例-->
+                    <h1>Publications</h1>
+                    <h2>Journals</h2>
+                    <h3>First author</h3>
+                    <ul>
+                        <li>
+                            Ning X, et al. Epi-DNNs: Epidemiological priors informed deep neural networks for modeling COVID-19 dynamics [J]. Computers in Biology and Medicine, 2023, 158: 106693. [Paper][Code]
+                        </li>
+                        <li>
+                            Ning X, et al. Euler iteration augmented Physics-informed neural networks for time-varying parameter estimation of the epidemic compartmental model [J]. Frontiers in Physics, 2022, 10: 1300. [Paper][Code]
+                        </li>
+                        <li>
+                            Ning X, et al. Physics-informed neural networks integrating compartmental model for analyzing COVID-19 transmission dynamics [J]. Viruses. 2023, 15(8), 1749; [Paper][Code]
+                        </li>
+                        <li>
+                            Ning X, et al. Segmentation algorithm of annual ring image based on U-Net convolution network [J]. Journal of ecology,2019,38(05):1580-1588. (In Chinese)
+                        </li>
+                        <li>
+                            Ning X, et al. Image segmentation of tree ring based on the random forest algorithm[J] Journal of Forestry Engineering,2018,3(04):125-130. (In Chinese)
+                        </li>
+                    </ul>
+
+                    <h3>Co-author</h3>
+                    <ul>
+                        <li>
+                            Wei Y, Guan J, Ning X, et al. Global COVID-19 pandemic waves: Limited lessons learned worldwide over the past year[J]. Engineering, 2022, 13: 91-98. [Paper]
+                        </li>
+                        <li>
+                            Lou L, Zhang L, Guan J, Ning X, et al. Retrospective modeling of the Omicron epidemic in Shanghai, China: exploring the timing and performance of control measures[J]. Tropical Medicine and Infectious Disease, 2023, 8(1): 39. [Paper]
+                        </li>
+                        <li>
+                            Zhao P, Li Y, Ning X. Simultaneous Wood Defect and Species Detection with 3D Laser Scanning Scheme[J]. International Journal of Optics, 2016, 2016:1-6.
+                        </li>
+                    </ul>
+
+                <h2>Confences</h2>
+                <h3>First author</h3>
+                <ul>
+                    <li>
+                        Ning X, et al. Semantic Answer Type Prediction by Using BERT classifier and Rule-based Ranking Strategies. Proceedings of the SeMantic Answer Type and Relation Prediction Task at ISWC 2021 Semantic Web Challenge (SMART2021): co-located with the 20th International Semantic Web Conference (ISWC 2021). CEUR Workshop Proceedings, 2022. [Paper][Code]
+                    </li>
+                    <li>
+                        Ning X, Celebi R. Knowledge base construction from pre-trained language models by prompt learning[C]//2022 Semantic Web Challenge on Knowledge Base Construction from Pre-Trained Language Models. 2022: 46-54. [Paper][Code]
+                    </li>
+                </ul>
+
+                <h3>Co-author</h3>
+                <ul>
+                    <li>
+                        Jia L, Ning X, et al. Bridging Distinct Spaces in Graph-based Machine Learning. Asian Conference on Pattern Recognition 2023.
+                    </li>
+                </ul>
+
+                </div>
+                <div class="lang cn">出版物 (中文)</div>
+            </div>
+            <div class="content education">
+                <div class="lang en active">Education (English)</div>
+                <div class="lang cn">教育(中文)</div>
+            </div>
+            <div class="content projects">
+                <div class="lang en active">Projects (English)</div>
+                <div class="lang cn">项目(中文)</div>
+            </div>
+            <div class="content talks">
+                <div class="lang en active">Talks (English)</div>
+                <div class="lang cn">会议(中文)</div>
+            </div>
+            <div class="content teaching">
+                <div class="lang en active">Teaching (English)</div>
+                <div class="lang cn">教学(中文)</div>
+            </div>
+            <div class="content cv">
+                <div class="lang en active">CV (English)</div>
+                <div class="lang cn">CV(中文)</div>
+            </div>
+            <div class="content others">
+                <div class="lang en active">Others (English)</div>
+                <div class="lang cn">其他(中文)</div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="pad">
+        <p>© 2024 Xiao Ning.</p>
+    </footer>
+
+    <script>
+            $(document).ready(function() {
+            // Tab切换功能
+            $('.tab-button').click(function() {
+                const tab = $(this).data('tab');
+                $('.content').removeClass('active');
+                $(`.content.${tab}`).addClass('active');
+            });
+
+            // 语言切换功能
+            let isEnglish = true;
+            $('.lang-switch').click(function() {
+                isEnglish = !isEnglish;
+                $('.lang').removeClass('active');
+                if (isEnglish) {
+                    $('.lang.en').addClass('active');
+                } else {
+                    $('.lang.cn').addClass('active');
+                }
+            });
+        });
+
+        let sidebarInitPaddingTop = 0;
+
+        $(() => {
+            sidebarInitPaddingTop = parseInt($(".sidebar").css("padding-top"))
+            console.log(sidebarInitPaddingTop)
+        })
+
+        window.addEventListener('scroll', function() {
+            let offY = $(".sidebar").offset().top - window.pageYOffset
+            if (offY < 0) {
+                $(".sidebar").css("padding-top", sidebarInitPaddingTop - offY + "px")
+            }
+            else {
+                $(".sidebar").css("padding-top", sidebarInitPaddingTop + "px");
+            }
+        });
+    </script>
+</body>
+</html>
