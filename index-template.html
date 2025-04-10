@@ -31,9 +31,10 @@
 
         .tabs {
             display: flex;
-            gap: 30px;
+            gap: 50px;
             list-style: none;
-            padding: 0;
+            /* padding: 0; */
+            padding-left: 260px; 
         }
 
         .tab-button {
@@ -92,8 +93,8 @@
         }
 
         .profile-icon {
-            width: 160px;
-            height: 160px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             background: #ddd;
         }
@@ -181,6 +182,11 @@
             font-size: 1.2em;
             color: rgb(71, 71, 71);
         }
+        .content-area p {
+            font-size: 1.5em;
+            line-height: 1.5em;
+            color: rgb(80, 80, 80);
+      }
 
     </style>
 </head>
@@ -203,15 +209,16 @@
         <div class="sidebar">
             <img src="profile.png" alt="Profile" class="profile-icon">
             <h2>Xiao Ning</h2>
-            <p>Dynamics models, Machine learning...</p>
+            <p>Nanjing, China</p>
             <ul class="links-list">
-                <li><i class="fas fa-location-dot fa-fw"></i><a href="#">NanJing</a></li>
-                <li><i class="fas fa-envelope fa-fw"></i><a href="#">Email</a></li>
-                <li><i class="fab fa-researchgate"></i><a href="#">ResearchGate</a></li>
-                <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li>
-                <li><i class="fab fa-github"></i><a href="#">Github</a></li>
-                <li><i class="fab fa-google"></i><a href="#">Google Scholar</a></li>
-                <li><i class="fab fa-orcid"></i><a href="#">ORCID</a></li>
+                <li><i class="fas fa-envelope fa-fw"></i><a href="#" title="xiao.ning@outlook.com">Email</a></li>
+                <!-- <li><i class="fas fa-envelope fa-fw"></i><a href="xiao.ning@outlook.com">Email</a></li> -->
+                <li><i class="fab fa-github"></i><a href="https://github.com/xiao-nx">Github</a></li>
+                <li><i class="fab fa-orcid"></i><a href="https://orcid.org/0000-0002-5785-2226">ORCID</a></li>
+                <!-- <li><i class="fas fa-location-dot fa-fw"></i><a href="#">NanJing</a></li> -->
+                <li><i class="fab fa-researchgate"></i><a href="https://www.researchgate.net/profile/Xiao-Ning-6?ev=hdr_xprf">ResearchGate</a></li>
+                <!-- <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li> -->
+                <li><i class="fab fa-google"></i><a href="https://scholar.google.com/citations?user=mgh085UAAAAJ&hl=en">GoogleScholar</a></li>
             </ul>
         </div>
 
