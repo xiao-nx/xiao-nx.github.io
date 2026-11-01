@@ -1,10 +1,10 @@
-# Michael Färber's Research Group
+# Xiao Ning's Research Group
 
-ScaDS.AI, TU Dresden 📧 michael.faerber@tu-dresden.de.
+ScaDS.AI, TU Dresden 📧 xiao.ning@outlook.com.
 
 | | |
 | - | - |
-|Welcome! I’m Michael Färber, a full professor at ScaDS.AI, TU Dresden, Germany. Our group focuses on AI research that prioritizes trustworthiness and alignment with human values. We work at the intersection of natural language processing (NLP), particularly large language models (LLMs), graph-based machine learning, and structured knowledge representation (e.g., knowledge graphs).<br /><br />In addition to core AI research, we actively explore applications in scientific domains, such as large-scale information extraction, knowledge curation, and AI-assisted scientific discovery. For collaboration, feel free to reach out via email 📧<br /><br />Explore our latest openings, thesis topics, and publications.|<img src="m.jpeg" width=150>|
+|Welcome! I’m Xiao Ning, a XX at HIGH, Heidelberg University, Germany. xxxx. For collaboration, feel free to reach out via email 📧<br /><br />Explore our latest openings, thesis topics, and publications.|<img src="xiao.jpg" width=150>|
 |||
 
 ## Recent News
