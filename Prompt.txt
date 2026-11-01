@@ -1,0 +1,13 @@
+生成一个 html，从上到下分为三部分: header，body，footer。
+header 部分高度200像素，包括一组tab按钮，点击每个tab按钮，body下面的内容显示相应的内容。按钮包括 Home，Publications，Education，Projects，Talks，Teaching，CV，Others。每个按钮只是简单显示未文字，当光标进入时，显示一个下边框线从中间0宽度向两边伸展到完全宽度的动画，当光标离开时反向播放这个动画。这些tab 按钮从左边开始对齐。
+header 右边放置一个按钮，显示为"中文/English"，在样式中为这个按钮的正常状态，高亮状态，点击状态分别定义三种颜色变量，并为这个按钮定义这三种状态的伪类样式，应用这些颜色变量为背景色。
+body 区域分为左右两部分，左边是一个 sidebar，宽度固定不变为300像素，右边为内容显示区域，对应 header 中的 tab 按钮，当点击不同的 header tab 按钮时，这个区域显示相应的内容。暂时显示和 header 中tab按钮对应的文本即可。
+sidebar 从上到下分别显示：
+一个 icon 图片，200x200像素，完全圆角，使得图片显示为圆形，src 暂时为空。
+一个粗体名字：Xiao Ning；
+一段简要介绍：Dynamics models, Machine learning...
+一组超链接的列表，从上到下包括 NanJing，Email，ResearchGate，Twitter，Github，Google Scholar, ORCID。每个超链接前面有一个小图标，链接地址和图标 src 暂时为空。
+footer 部分高度200像素，居中显示“© 2024 Xiao Ning.”
+header, body, footer 之间由一条水平线分割。footer 背景色为灰色。
+点击 header 中每个 tab 按钮，body 中右边区域就显示相应的内容，但是对每个 tab 有两份一样的内容，默认只显示第一份，另一份隐藏。当点击 header 最右边的 "中文/English" 按钮时，切换显示这两份内容，变成每个 tab 显示第二份内容，隐藏第一份内容，再点击这个按钮再次变成显示第一份，隐藏第二份。
+html charset=utf8，引用 jquery
