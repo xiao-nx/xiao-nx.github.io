@@ -1,615 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="utf-8">
-    <title>Xiao Ning's Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-        :root {
-            --btn-normal: #cd86f7;
-            --btn-hover: #d9a0fa;
-            --btn-active: #c76afd;
-        }
+    <meta charset="UTF-8">
+    <title>Bootstrap Demo</title>
 
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
+    <link href="main.css" rel="stylesheet">
 
-        header {
-            height: 80px;
-            padding: 20px;
-            border-bottom: 1px solid #ccc;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 
-        .tabs {
-            display: flex;
-            gap: 50px;
-            list-style: none;
-            /* padding: 0; */
-            padding-left: 260px; 
-        }
-
-        .tab-button {
-            position: relative;
-            cursor: pointer;
-            padding: 10px 0;
-            background: none;
-            border: none;
-            font-size: 20px;
-        }
-
-        .tab-button::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: #333;
-            transition: all 0.3s ease;
-        }
-
-        .tab-button:hover::before {
-            width: 100%;
-            left: 0;
-        }
-
-        .lang-switch {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            background-color: var(--btn-normal);
-            transition: background 0.3s;
-            user-select: none;
-        }
-
-        .lang-switch:hover {
-            background-color: var(--btn-hover);
-        }
-
-        .lang-switch:active {
-            background-color: var(--btn-active);
-        }
-
-        .body {
-            flex: 1;
-            display: flex;
-            min-height: calc(100vh - 400px);
-        }
-
-        .sidebar {
-            width: 200px;
-            padding: 20px;
-            border-right: 1px solid #ccc;
-        }
-
-        .profile-icon {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            background: #ddd;
-        }
-
-        .links-list img {
-            width: 16px;
-            height: 16px;
-            margin-right: 10px;
-        }
-
-        .content-area {
-            flex: 1;
-            padding: 20px;
-        }
-
-        .content {
-            display: none;
-        }
-
-        .content.active {
-            display: block;
-        }
-
-        .lang {
-            display: none;
-        }
-
-        .lang.active {
-            display: block;
-        }
-
-        footer {
-            height: 80px;
-            background: #e4e4e4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-top: 1px solid #ccc;
-        }
-        
-        .pad {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-
-        .pad-left {
-            padding-left: 100px;
-        }
-
-        .links-list a {
-            text-decoration: none;
-            padding-left: 5px;
-        }
-
-        .links-list a:hover {
-             text-decoration: underline;
-        }
-
-        .links-list a:link {
-            color: black;
-        }
-
-        .links-list a:visited {
-            color: black;
-        }
-
-        .links-list {
-            list-style-type: none;
-            padding-left: 0;
-            margin-left: 0;
-        }
-
-        .links-list li {
-            display: flex;
-            align-items: center; /* 垂直居中 */
-        }
-        .links-list li i {
-            width: 1.25em; /* 统一宽度 */
-            text-align: center; /* 图标水平居中 */
-        }
-
-        .content-area li {
-            line-height: 1.5em;
-            padding: 10px;
-            font-size: 1.2em;
-            color: rgb(71, 71, 71);
-        }
-        .content-area p {
-            font-size: 1.5em;
-            line-height: 1.5em;
-            color: rgb(80, 80, 80);
-      }
-
-    </style>
+    <script src="main.js"></script>
 </head>
 <body>
-    <header class="pad-left">
-        <ul class="tabs">
-            <li><button class="tab-button" data-tab="home">Home</button></li>
-            <li><button class="tab-button" data-tab="publications">Publications</button></li>
-            <li><button class="tab-button" data-tab="education">Education</button></li>
-            <li><button class="tab-button" data-tab="projects">Projects</button></li>
-            <li><button class="tab-button" data-tab="talks">Talks</button></li>
-            <li><button class="tab-button" data-tab="teaching">Teaching</button></li>
-            <li><button class="tab-button" data-tab="cv">CV</button></li>
-            <li><button class="tab-button" data-tab="others">Others</button></li>
-        </ul>
-        <div class="lang-switch">中文/English</div>
-    </header>
 
-    <div class="body pad">
-        <div class="sidebar">
-            <img src="profile.png" alt="Profile" class="profile-icon">
+<div>
+    <div class="head">
+        <div class="head-content">
+            <div class="group-name nav-button" href="index">Research Group</div>
+            <div class="menu">
+                <div class="nav-button" href="About">About</div>
+                <div class="nav-button" href="Research">Research</div>
+                <!-- <div class="menu-drop-down">
+                    Research
+                    <div class="menu-items">
+                        <div href="Research_areas">research areas</div>
+                        <div href="Research_projects">projects</div>
+                        <div href="Research_datasets">datasets</div>
+                        <div href="Research_demos_tools">demos & tools</div>
+                    </div>
+                </div> -->
+                <div class="nav-button" href="Publications">Publications</div>
+                <div class="nav-button" href="Teaching">Teaching</div>
+                <div class="nav-button" href="Talks">Talks</div>
+                <div class="menu-drop-down">
+                    media
+                    <div class="menu-items">
+                        <div>media overview</div>
+                        <div>research areas</div>
+                        <div>selected publications</div>
+                        <div>publications</div>
+                    </div>
+                </div>
+                <div class="nav-button" href="Opportunities">Opportunities</div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="body">
+        <div class="body-content">
             <h2>Xiao Ning</h2>
-            <p>Nanjing, China</p>
-            <ul class="links-list">
-                <li><i class="fas fa-envelope fa-fw"></i><a href="#" title="xiao.ning@outlook.com">Email</a></li>
-                <!-- <li><i class="fas fa-envelope fa-fw"></i><a href="xiao.ning@outlook.com">Email</a></li> -->
-                <li><i class="fab fa-github"></i><a href="https://github.com/xiao-nx">Github</a></li>
-                <li><i class="fab fa-orcid"></i><a href="https://orcid.org/0000-0002-5785-2226">ORCID</a></li>
-                <!-- <li><i class="fas fa-location-dot fa-fw"></i><a href="#">NanJing</a></li> -->
-                <li><i class="fab fa-researchgate"></i><a href="https://www.researchgate.net/profile/Xiao-Ning-6?ev=hdr_xprf">ResearchGate</a></li>
-                <!-- <li><i class="fab fa-twitter"></i><a href="#">Twitter</a></li> -->
-                <li><i class="fab fa-google"></i><a href="https://scholar.google.com/citations?user=mgh085UAAAAJ&hl=en">GoogleScholar</a></li>
-            </ul>
+
+<p>Postdoctoral Researcher &amp; Medical Data Scientist</p>
+
+<p>Heidelberg Institute of Global Health, Heidelberg University, Germany</p>
+
+<table style="width: 100%; border: none; border-collapse: collapse; margin-top: 10px;">
+  <tr>
+    <!-- Left: Introduction -->
+    <td style="width: 75%; vertical-align: top; border: none; padding: 0 25px 0 0;">
+
+      <strong>Welcome!</strong>
+      <br>
+      I'm Xiao Ning, a researcher at the Heidelberg Institute of Global Health, Heidelberg University, Germany.
+      My research focuses on artificial intelligence, statistical inference, and computational modelling, with applications in understanding infectious disease dynamics, ecological processes, and their interactions with environmental change.
+
+    <div style="margin-top: 15px;">
+        <strong>Research Highlights</strong>
+
+        <ul style="margin-top: 15px; font-weight: normal; line-height: 1.8;">
+            <li>Trustworthy AI and Cross-Domain Generalization in Bioacoustics</li>
+            <li>Uncertainty Quantification in Ecological Inference</li>
+            <li>Data-Driven and Mechanistic Modelling of Infectious Disease Dynamics</li>
+        </ul>
+    </div>
+
+    </td>
+
+    <!-- Right: Profile -->
+    <td style="width: 25%; vertical-align: top; border: none; padding: 0;">
+
+      <div style="min-width: 190px; position: relative; top: -30px;">
+
+        <!-- Avatar and name centered -->
+        <div style="text-align: center;">
+          <img src="profile.png"
+               width="150"
+               height="150"
+               style="border-radius: 50%; object-fit: cover;">
+
+          <div style="margin-top: 5px;">
+            <strong>Xiao Ning</strong>
+          </div>
         </div>
 
-        <div class="content-area">
-            <!-- 每个tab对应两个语言版本的内容 -->
-            <div class="content home active">
-                <div class="lang en active"><h1>Xiao Ning (宁霄)</h1>
-<h2>🔍 About Me</h2>
-<p>I am a Lecturer at the School of Science, China Pharmaceutical University. Previously, I obtained my Ph.D. in Biomedical Engineering from Southeast University (Dec. 2023), under the supervision of <strong>Prof. Feng Chen</strong> and <strong>Prof. Xiao Sun</strong>. My research focuses on combining <strong>domain knowledge</strong> (e.g., physics, mathematics) with <strong>data-driven approaches</strong> to model and analyze complex biological systems more effectively.  </p>
-<p>My research interests include:  </p>
-<ul>
-<li><strong>Pharmacokinetics</strong>  </li>
-<li><strong>Physics-informed modeling</strong>  </li>
-<li><strong>Infectious disease transmission modeling</strong>  </li>
-<li><strong>Information extraction &amp; knowledge graph</strong></li>
-</ul>
-<h2>🕓 Latest News</h2>
-<ul>
-<li>_ Waiting... (Stay tuned!)_</li>
-</ul>
-<h2>📚 Selected Publications</h2>
-<ul>
-<li><strong>Epi-DNNs: Epidemiological priors informed deep neural networks for modeling COVID-19 dynamics</strong> <a href="https://www.sciencedirect.com/science/article/pii/S0010482523001580">[Paper]</a> • <a href="link">[Code]</a><br />
-<em>COMPUTERS IN BIOLOGY AND MEDICINE, <strong>2023</strong>, 158: 106693</em>  </li>
-</ul>
-<h2>📫 Contact</h2>
-<ul>
-<li>📧 Email: xiao.ning@outlook.com</li>
-<li>🔗 <a href="https://github.com/xiao-nx">GitHub</a> | <a href="https://scholar.google.com/citations?user=mgh085UAAAAJ&amp;hl=en">Google Scholar</a> | <a href="https://orcid.org/0000-0002-5785-2226">ORCID</a></li>
-</ul></div>
-                <div class="lang cn"><h1>宁霄</h1>
-<p>宁霄，，，</p></div>
-            </div>
-            <div class="content publications">
-                <div class="lang en active"><h1>📚 Publications</h1>
-<h2>📝 First Author</h2>
-<ul>
-<li><strong>Epi-DNNs: Epidemiological priors informed deep neural networks for modeling COVID-19 dynamics</strong> <a href="https://www.sciencedirect.com/science/article/pii/S0010482523001580">[Paper]</a> • <a href="link">[Code]</a><br />
-<em>COMPUTERS IN BIOLOGY AND MEDICINE, <strong>2023</strong>, 158: 106693</em><br />
-<strong>Xiao Ning</strong>†, Linlin Jia, Yongyue Wei, Xi-An Li<em>, Feng Chen</em></li>
-<li><strong>Physics-Informed Neural Networks Integrating Compartmental Model for Analyzing COVID-19 Transmission Dynamics</strong> <a href="https://www.mdpi.com/1999-4915/15/8/1749">[Paper]</a> • <a href="link">[Code]</a><br />
-<em>VIRUSESBASEL, <strong>2023</strong>, 15(8): 1749</em><br />
-<strong>Xiao Ning</strong>†, Jinxing Guan, Xi-An Li, Yongyue Wei, Feng Chen*</li>
-<li><strong>Euler iteration augmented physics-informed neural networks for time-varying parameter estimation of the epidemic compartmental model</strong> <a href="https://www.frontiersin.org/journals/physics/articles/10.3389/fphy.2022.1062554/full">[Paper]</a> • <a href="link">[Code]</a><br />
-<em>FRONTIERS IN PHYSICS, <strong>2022</strong>, 10: 1062554</em><br />
-<strong>Xiao Ning</strong>†, Xi-An Li, Yongyue Wei, Feng Chen* </li>
-<li><strong>Knowledge Base Construction from Pre-trained Language Models by Prompt Learning</strong> <a href="https://ceur-ws.org/Vol-3274/paper4.pdf">[Paper]</a> • <a href="link">[Code]</a>  <br />
-<em>Semantic Web Challenge on Knowledge Base Construction</em>, <strong>2022</strong>: 46–54.<br />
-<strong>Xiao Ning</strong>†, Remzi Celebi*  </li>
-<li><strong>Semantic Answer Type Prediction by Using BERT Classifier and Rule-based Ranking Strategies</strong> <a href="https://ceur-ws.org/Vol-3119/">[Paper]</a> • <a href="link">[Code]</a> <br />
-<em>Proceedings of SMART2021 at ISWC 2021</em>, CEUR Workshop Proceedings, <strong>2022</strong>.<br />
-<strong>Xiao Ning</strong>†, Ammar Ammar, Arif Yilmaz, Shervin Mehryar, Remzi Celebi</li>
-<li><strong>Segmentation algorithm of annual ring image based on U-Net convolution network</strong><br />
-<em>Journal of Ecology</em>, <strong>2019</strong>, 38(05): 1580–1588. <em>(In Chinese)</em><br />
-<strong>Xiao Ning</strong>†, Peng Zhao*  </li>
-<li><strong>Image segmentation of tree ring based on the random forest algorithm</strong><br />
-<em>Journal of Forestry Engineering</em>, <strong>2018</strong>, 3(04): 125–130. <em>(In Chinese)</em><br />
-<strong>Xiao Ning</strong>†, Peng Zhao*  </li>
-</ul>
-<h3>🤝 Co-Author</h3>
-<ul>
-<li><strong>Bridging Distinct Spaces in Graph-based Machine Learning</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-031-47637-2_1">[Paper]</a> • <a href="https://github.com/jajupmochi/ged-cost-learn-framework">[Code]</a><br />
-<em>Asian Conference on Pattern Recognition (ACPR), <strong>2023</strong>.</em>  <br />
-  Linlin Ji, <strong>Xiao Ning</strong>, Benoit Paul Honeine, Kaspar Riesen</li>
-<li><strong>Global COVID-19 pandemic waves: Limited lessons learned worldwide over the past year</strong> <a href="https://www.sciencedirect.com/science/article/pii/S2095809921003532?via%3Dihub">[Paper]</a> • <a href="Link">[Code]</a><br />
-<em>Engineering, <strong>2022</strong>, <strong>13</strong>: 91–98.</em><br />
-  Yongyue Wei†, Jinxing Guan†, <strong>Xiao Ning</strong>, Yuelin Li, Liangmin Wei, Sipeng Shen, Ruyang Zhang,Yang Zhao, Hongbing Shen<em>, Feng Chen</em></li>
-<li><strong>Retrospective modeling of the Omicron epidemic in Shanghai, China: exploring the timing and performance of control measures</strong> <a href="https://www.mdpi.com/2414-6366/8/1/39">[Paper]</a> • <a href="Link">[Code]</a><br />
-<em>Tropical Medicine and Infectious Disease, <strong>2023</strong>, <strong>8(1)</strong>: 39.</em>   <br />
-  Lishu Lou†, Longyao Zhang†, Jinxing Guan, <strong>Xiao Ning</strong>, Mengli Nie, Yongyue Wei, Feng Chen*</li>
-<li><strong>Simultaneous Wood Defect and Species Detection with 3D Laser Scanning Scheme</strong><br />
-<em>International Journal of Optics, <strong>2016</strong>: 1–6.</em><br />
-  Peng Zhao, Yue Li, <strong>Xiao Ning</strong>  </li>
-</ul></div>
-                <div class="lang cn"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>paper0</li>
-<li>paper1</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-            </div>
-            <div class="content education">
-                <div class="lang en active"><h1>🎓 Education</h1>
-<h2><span style="background-color: #b2ebf2; padding: 3px 8px; border-radius: 5px; font-weight: bold;">🥇 Ph.D. in Biomedical Engineering</span></h2>
-<p>📍 Southeast University, Nanjing, China<br />
-📅 Sep. 2019 – Dec. 2023</p>
-<h3>🌐 International Experience</h3>
-<ul>
-<li>🇨🇭 Nov. 2023 – Dec. 2023: Visiting Researcher, University of Bern, Switzerland  </li>
-<li>🇩🇪 May 2023 – Aug. 2023: Visiting Researcher, Karlsruhe Institute of Technology, Germany  </li>
-<li>🇳🇱 Feb. 2021 – Feb. 2022: Joint Doctoral Student, Maastricht University, Netherlands</li>
-</ul>
-<h2><span style="background-color: #b2ebf2; padding: 3px 8px; border-radius: 5px; font-weight: bold;">🥈 M.S. in Forestry Information Engineering</span></h2>
-<p>📍 Northeast Forestry University, Harbin, China<br />
-📅 Sep. 2016 – Dec. 2019</p>
-<h2><span style="background-color: #b2ebf2; padding: 3px 8px; border-radius: 5px; font-weight: bold;">🥉 B.S. in Mechatronic Engineering</span></h2>
-<p>📍 Xihua University, Chengdu, China<br />
-📅 Sep. 2011 – Jun. 2015</p></div>
-                <div class="lang cn"><h1>Education</h1>
-<h2>南京医科大学</h2>
-<p>生命与计算科学</p></div>
-            </div>
-            <div class="content projects">
-                <div class="lang en active"><h1>Projects</h1>
-<h2>Project 1: Deep Learning for COVID-19 Prediction</h2>
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
-        ![Project 1 Image](https://example.com/project1-image.jpg)  
-        <p><strong>Results:</strong></p>
-        <img src="https://example.com/results1.jpg" alt="Results 1" style="width: 100%; border-radius: 8px;">
-    </div>
-    <div style="flex: 2; padding-left: 20px;">
-        <h4><i class="fas fa-virus"></i> **Project Overview:**</h4>
-        <p>This project focuses on developing a deep learning model to predict the spread of COVID-19 using epidemiological data. The model integrates time-varying parameters and compartmental models, providing valuable insights into pandemic dynamics.</p>
+        <!-- Contact links -->
+        <div style="width: fit-content; margin: 12px auto 0; text-align: left;">
+          📧 <a href="mailto:xiao.ning@outlook.com">Email</a><br>
+          💻 <a href="https://github.com/xiao-nx">GitHub</a><br>
+          🎓 <a href="https://scholar.google.com/citations?user=mgh085UAAAAJ&amp;hl=en">Google Scholar</a>
+        </div>
 
-        <h5><i class="fas fa-cogs"></i> **Key Technologies:**</h5>
-        <ul>
-            <li>Deep Neural Networks (DNN)</li>
-            <li>Convolutional Neural Networks (CNN)</li>
-            <li>Epidemiological Models</li>
-        </ul>
+      </div>
+    </td>
+  </tr>
+</table>
 
-        <h5><i class="fas fa-book"></i> **Published Paper:**</h5>
-        <a href="https://example.com/project1-paper" target="_blank">Read the Paper</a>
-    </div>
+<div style="margin-top: -5px; margin-bottom: 10px;">
+    <strong>News & Updates</strong>
 </div>
 
-<hr />
-<h2>Project 2: Automated Tree Species Detection Using 3D Laser Scanning</h2>
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
-        ![Project 2 Image](https://example.com/project2-image.jpg)  
-        <p><strong>Results:</strong></p>
-        <img src="https://example.com/results2.jpg" alt="Results 2" style="width: 100%; border-radius: 8px;">
-    </div>
-    <div style="flex: 2; padding-left: 20px;">
-        <h4><i class="fas fa-leaf"></i> **Project Overview:**</h4>
-        <p>This project applies machine learning and 3D laser scanning technology to detect tree species and defects in forest management. The system automates the identification process, enhancing forest monitoring efficiency.</p>
-
-        <h5><i class="fas fa-cogs"></i> **Key Technologies:**</h5>
-        <ul>
-            <li>Machine Learning (Random Forest)</li>
-            <li>3D Laser Scanning</li>
-            <li>Geographic Information Systems (GIS)</li>
-        </ul>
-
-        <h5><i class="fas fa-book"></i> **Published Paper:**</h5>
-        <a href="https://example.com/project2-paper" target="_blank">Read the Paper</a>
-    </div>
-</div>
-
-<hr />
-<h2>Project 3: AI-Powered Semantic Web Query System</h2>
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
-        ![Project 3 Image](https://example.com/project3-image.jpg)  
-        <p><strong>Results:</strong></p>
-        <img src="https://example.com/results3.jpg" alt="Results 3" style="width: 100%; border-radius: 8px;">
-    </div>
-    <div style="flex: 2; padding-left: 20px;">
-        <h4><i class="fas fa-search"></i> **Project Overview:**</h4>
-        <p>This project investigates the use of artificial intelligence (AI) to optimize semantic web querying. By integrating natural language processing (NLP) with machine learning models, the system improves the accuracy and efficiency of web search engines.</p>
-
-        <h5><i class="fas fa-cogs"></i> **Key Technologies:**</h5>
-        <ul>
-            <li>Natural Language Processing (NLP)</li>
-            <li>Machine Learning (BERT)</li>
-            <li>Semantic Web Technologies</li>
-        </ul>
-
-        <h5><i class="fas fa-book"></i> **Published Paper:**</h5>
-        <a href="https://example.com/project3-paper" target="_blank">Read the Paper</a>
-    </div>
-</div>
-
-<hr />
-<h2>Project 4: Autonomous Robot for Surgery Assistance</h2>
-<div style="display: flex; align-items: center;">
-    <div style="flex: 1;">
-        ![Project 4 Image](https://example.com/project4-image.jpg)  
-        <p><strong>Results:</strong></p>
-        <img src="https://example.com/results4.jpg" alt="Results 4" style="width: 100%; border-radius: 8px;">
-    </div>
-    <div style="flex: 2; padding-left: 20px;">
-        <h4><i class="fas fa-robot"></i> **Project Overview:**</h4>
-        <p>This project explores the development of an autonomous surgical robot designed to assist with minimally invasive surgery. The robot is equipped with advanced imaging systems and real-time decision-making capabilities, ensuring precision in surgical procedures.</p>
-
-        <h5><i class="fas fa-cogs"></i> **Key Technologies:**</h5>
-        <ul>
-            <li>Robotics</li>
-            <li>Computer Vision</li>
-            <li>Machine Learning</li>
-        </ul>
-
-        <h5><i class="fas fa-book"></i> **Published Paper:**</h5>
-        <a href="https://example.com/project4-paper" target="_blank">Read the Paper</a>
-    </div>
-</div></div>
-                <div class="lang cn"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>论文1</li>
-<li>论文2</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-            </div>
-            <div class="content talks">
-                <div class="lang en active"><h1>Talks</h1>
-<ul>
-<li>Oct. 22, 2023 : Physics-Informed Neural Networks Integrating Compartmental Model for Analyzing COVID-19 Transmission Dynamics, KDD2023 workshop on Epidemiology meets Data Mining and Knowledge discovery</li>
-<li>Jan. 17, 2023 : Euler iteration augmented physics-informed neural networks for time-varying parameter estimation of the epidemic compartmental model, The 2022 International Postgraduate Forum on Public Health of HUST</li>
-<li>Oct. 27, 2022 : Knowledge Base Construction from Pre-trained Language Models, ISWC 2022</li>
-<li>Oct. 21, 2021 : Answer Type Predcition, ISWC 2021</li>
-</ul></div>
-                <div class="lang cn"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>paper0</li>
-<li>paper1</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-            </div>
-            <div class="content teaching">
-                <div class="lang en active"><h1>📚 Teaching</h1>
-<ul>
-<li><strong>Time Series Analysis</strong>, Instructor, Undergraduate(Required)<br />
-  📅 2023–2024 (Semester 2), 2024–2025 (Semester 1)  <br />
-  📍 China Pharmaceutical University</li>
-<li><strong>Generalized Linear Models and Applications</strong>, Instructor, Undergraduate(Required)<br />
-  📅 2023–2024 (Semester 2), 2024–2025 (Semester 1)<br />
-  📍 China Pharmaceutical University</li>
-<li><strong>Statistical Methods for Biomedical Sciences</strong>, Instructor, Undergraduate(Required) <br />
-  📅 2024–2025 (Semester 1)<br />
-  📍 China Pharmaceutical University</li>
-<li><strong>Multivariate Statistics</strong>, Instructor, Master(Required)<br />
-  📅 2023–2024 (Semester 2), 2024–2025 (Semester 1)
-  📍 China Pharmaceutical University</li>
-</ul>
-<h3>👥 Course Participant / Contributor</h3>
-<ul>
-<li><strong>Mathematical Modeling</strong>, Undergraduate(Required)<br />
-  📅 2023–2024 (Semester 2), 2024–2025 (Semester 1) <br />
-  📍 China Pharmaceutical University  </li>
-<li><strong>Advanced Medical Statistics</strong>, Master(Required) <br />
-  📅 2023–2024 (Semester 2)<br />
-  📍 China Pharmaceutical University  </li>
-<li><strong>Data Mining</strong>, Master(Required), Teaching Assistant, English  <br />
-  📅 2021 Spring<br />
-  📍 Maastricht University</li>
-</ul></div>
-                <div class="lang cn"><h1>📚 Teaching</h1>
-<ul>
-<li><strong>时间序列分析</strong>, 课程负责人, 本科(必修)<br />
-  2023-2024(2), 2024-2025(1)，中国药科大学  </li>
-<li><strong>广义线性模型及其应用</strong>，课程负责人，本科(必修)<br />
-  2023-2024(2), 2024-2025(1)，中国药科大学  </li>
-<li><strong>医药数理统计</strong>，主讲教师，本科(必修课)<br />
-  2024-2025(1), 拔尖计划班, 线上线下混合授课，中国药科大学  </li>
-<li><strong>多元统计</strong>，课程负责人，硕士(必修)<br />
-  2023-2024(2)，中国药科大学  </li>
-</ul>
-<h3>👥 参与课程</h3>
-<ul>
-<li><strong>高级医学统计</strong>，硕士（必修课）<br />
-  2023-202(2)，中国药科大学 </li>
-<li><strong>数学建模</strong>，本科（必修）<br />
-  2023-2024(2)，中国药科大学 </li>
-<li><strong>Data Mining Course</strong>，硕士，英文授课, 助教<br />
-  2021 春季  </li>
-</ul></div>
-            </div>
-            <div class="content cv">
-                <div class="lang en active"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>paper0</li>
-<li>paper1</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-                <div class="lang cn"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>paper0</li>
-<li>paper1</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-            </div>
-            <div class="content others">
-                <div class="lang en active"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>paper0</li>
-<li>paper1</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-                <div class="lang cn"><h1>Publications</h1>
-<h2>Paper</h2>
-<p>Hello</p>
-<ul>
-<li>paper0</li>
-<li>paper1</li>
-</ul>
-<h2>Book</h2>
-<p>World</p>
-<ul>
-<li>book0</li>
-<li>book1</li>
-</ul></div>
-            </div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">November, 2026</td>
+<td style="text-align: left;">New project on xx</td>
+</tr>
+</tbody>
+</table>
         </div>
     </div>
-
-    <footer class="pad">
-        <p>© Xiao Ning.</p>
-    </footer>
-
-    <script>
-            $(document).ready(function() {
-            // Tab切换功能
-            $('.tab-button').click(function() {
-                const tab = $(this).data('tab');
-                $('.content').removeClass('active');
-                $(`.content.${tab}`).addClass('active');
-            });
-
-            // 语言切换功能
-            let isEnglish = true;
-            $('.lang-switch').click(function() {
-                isEnglish = !isEnglish;
-                $('.lang').removeClass('active');
-                if (isEnglish) {
-                    $('.lang.en').addClass('active');
-                } else {
-                    $('.lang.cn').addClass('active');
-                }
-            });
-        });
-
-        let sidebarInitPaddingTop = 0;
-
-        $(() => {
-            sidebarInitPaddingTop = parseInt($(".sidebar").css("padding-top"))
-            console.log(sidebarInitPaddingTop)
-        })
-
-        window.addEventListener('scroll', function() {
-            let offY = $(".sidebar").offset().top - window.pageYOffset
-            if (offY < 0) {
-                $(".sidebar").css("padding-top", sidebarInitPaddingTop - offY + "px")
-            }
-            else {
-                $(".sidebar").css("padding-top", sidebarInitPaddingTop + "px");
-            }
-        });
-    </script>
+    <div class="foot">
+        ©Copyright 2026 Michael Färber. Powered by Jekyll/al-folio. Imprint · Privacy
+    </div>
+</div>
+  
 </body>
 </html>
