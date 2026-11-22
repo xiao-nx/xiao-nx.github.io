@@ -50,7 +50,25 @@ Northeast Forestry University · Harbin, China
 Xihua University · Chengdu, China  
 *Sep. 2011 – Jun. 2015*
 
+
+
 ---
+
+## Academic Service
+
+**Conference Reviewer**<br>
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)
+
+**Journal Reviewer**<br>
+Frontiers in Neuroscience<br>
+Frontiers in Public Health <br>
+IEEE Journal of Biomedical and Health Informatics (JBHI)<br>
+IEEE Transactions on Neural Networks and Learning Systems (TNNLS)
+
+---
+
+
+
 
 ## Beyond Research
 
