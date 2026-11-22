@@ -40,21 +40,21 @@ Heidelberg Institute of Global Health, Heidelberg University, Germany
 </tr>
 </table>
 
+
+
 ---
 
-### Entrepreneurship
+### Startup
 
-**AcademicPath — Find Your Next Step in Academia**
-
-*Founder & Developer | 2026–Present*
-
-I'm building **AcademicPath**, an early-stage startup focused on helping students and researchers worldwide discover PhD, postdoctoral, and faculty opportunities, explore funding, and access career guidance and application resources.
-
+**AcademicPath** | *Founder & Developer*
 
 🌐 **Website:** <a href="https://xiao-nx.github.io/OpenFindings/index.html" target="_blank" rel="noopener noreferrer">AcademicPath ↗</a>
 
+I'm building **AcademicPath** with a simple mission to help people **Find Your Next Step in Academia**. The platform aims to connect students and researchers worldwide with PhD, postdoctoral, and faculty opportunities, funding information, and career development resources.
 
 ---
+
+
 
 ### News & Updates
 
